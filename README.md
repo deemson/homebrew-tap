@@ -1,2 +1,3 @@
 # homebrew-tap
-Homebrew tap for deemson's tools (gbx)
+
+Homebrew tap for deemson's tools
