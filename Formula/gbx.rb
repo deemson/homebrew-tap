@@ -5,21 +5,21 @@
 class Gbx < Formula
   desc "Manage your fleet of git repos with a pretty TUI"
   homepage "https://github.com/deemson/gbx"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/deemson/gbx/releases/download/v0.3.0/gbx_0.3.0_darwin_amd64.tar.gz"
-      sha256 "c4f8d8c88543e76a382671fc98e5643008ce4d3e422402fead1037ff002ca410"
+      url "https://github.com/deemson/gbx/releases/download/v0.4.0/gbx_0.4.0_darwin_amd64.tar.gz"
+      sha256 "7e2d4862110d519cfadaf86997fb779f8542d46876c73efb7c2c58c4574af73c"
 
       define_method(:install) do
         bin.install "gbx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/deemson/gbx/releases/download/v0.3.0/gbx_0.3.0_darwin_arm64.tar.gz"
-      sha256 "ba74617fbe816768b9f42e56a0aed9f7b692e2ec33cca6b772493f74e09b42d4"
+      url "https://github.com/deemson/gbx/releases/download/v0.4.0/gbx_0.4.0_darwin_arm64.tar.gz"
+      sha256 "aa432b85d94c9aedac28b5980aa6e068fdf826d5e610d12294f2b52fff4fa096"
 
       define_method(:install) do
         bin.install "gbx"
@@ -29,15 +29,15 @@ class Gbx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deemson/gbx/releases/download/v0.3.0/gbx_0.3.0_linux_amd64.tar.gz"
-      sha256 "dcb00382f1692d57c88610198554f12f17924964c35b7a7294164c2fa870d0f5"
+      url "https://github.com/deemson/gbx/releases/download/v0.4.0/gbx_0.4.0_linux_amd64.tar.gz"
+      sha256 "fdfcef9a88f745f65dbf1bfddd94d9773da8226dea85231cd06756beb805e380"
       define_method(:install) do
         bin.install "gbx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deemson/gbx/releases/download/v0.3.0/gbx_0.3.0_linux_arm64.tar.gz"
-      sha256 "5fca212a56a18295e8d776ebd564649968ec981d43f70338fd883844a11488c3"
+      url "https://github.com/deemson/gbx/releases/download/v0.4.0/gbx_0.4.0_linux_arm64.tar.gz"
+      sha256 "b1bb031fca95fc23f9f67881979d02169856df1b2b4bc290ba81c0cb6fae859c"
       define_method(:install) do
         bin.install "gbx"
       end
