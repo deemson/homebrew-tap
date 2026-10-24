@@ -5,17 +5,17 @@
 class Shed < Formula
   desc "Sync dotfiles between system paths and a local shed"
   homepage "https://github.com/deemson/shed"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   depends_on :macos
 
   if Hardware::CPU.arm?
-    url "https://github.com/deemson/shed/releases/download/v0.2.0/shed-aarch64-apple-darwin.tar.gz"
-    sha256 "41b8cc6229bb8e0cbe80302e66292f6cc2afadfcd96bf5f8a2ba83321f55ffb7"
+    url "https://github.com/deemson/shed/releases/download/v0.3.0/shed-aarch64-apple-darwin.tar.gz"
+    sha256 "325fb6054337d10c733a9843c66fabeded10502992e2385a5ce77710b317bbd1"
   else
-    url "https://github.com/deemson/shed/releases/download/v0.2.0/shed-x86_64-apple-darwin.tar.gz"
-    sha256 "5837f99398177e11f6eafa088c6dc94d286f1361c27c7f463456ee005aa1fcfd"
+    url "https://github.com/deemson/shed/releases/download/v0.3.0/shed-x86_64-apple-darwin.tar.gz"
+    sha256 "9fc6f74b1a6fef147f2082ed53e9071b4908364a0fd99364db8fbc4a9de7fd77"
   end
 
   def install
